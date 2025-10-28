@@ -212,7 +212,7 @@ p{
     top: -50px;
     z-index: 1;
 }
-.our-benefits .our-benefit-text h1, .our-stars .our-star-text > h1{
+.our-benefits .our-benefit-text > h1, .our-stars .our-star-text > h1{
     padding: 30px 0 40px;
 }
 .our-benefits .our-benefit-text .speciality{
@@ -234,6 +234,30 @@ p{
 .our-stars .our-star-text .btn-teal{
     margin: 20px 0;
     width: 100%;
+}
+
+.our-features{
+    padding: 30px 20px;
+    text-align: center;
+}
+.our-features h1{
+    padding: 30px 0 40px;
+}
+.our-features .features-cards-1 .features-card img, .our-features .features-cards-2 .features-card img{
+    width: 100%;
+    padding: 0 20px;
+}
+.our-features .features-cards-1 .features-card div, .our-features .features-cards-2 .features-card div{
+    padding: 40px 60px;
+    text-align: start;
+    background-color: var(--bg-color-teal);
+}
+.our-features .features-cards-1 .features-card div h2, .our-features .features-cards-2 .features-card div h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.our-features .features-cards-1 .features-card div p, .our-features .features-cards-2 .features-card div p{
+    padding: 16px 0;
 }
 @media screen and (min-width: 768px){
     h1{
@@ -448,6 +472,30 @@ p{
     .our-stars .our-star-text .btn-teal{
         margin: 30px 0;
         width: 100%;
+    }
+    .our-features{
+    padding: 40px 80px;
+    text-align: center;
+    }
+    .our-features h1{
+        font-size: 48px;
+        padding: 30px 0 40px;
+    }
+    .our-features .features-cards-1 .features-card img, .our-features .features-cards-2 .features-card img{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .our-features .features-cards-1 .features-card div, .our-features .features-cards-2 .features-card div{
+        padding: 40px 80px;
+        text-align: start;
+        background-color: var(--bg-color-teal);
+    }
+    .our-features .features-cards-1 .features-card div h2, .our-features .features-cards-2 .features-card div h2{
+        font-size: 44px;
+        font-weight: 500;
+    }
+    .our-features .features-cards-1 .features-card div p, .our-features .features-cards-2 .features-card div p{
+        padding: 16px 0;
     }
 }
 
@@ -689,5 +737,55 @@ p{
     .our-stars .our-star-text .btn-teal{
         margin: 30px 0;
         width: 40%;
+    }
+    .our-features{
+        width: 100%;
+        padding: 140px 132px 40px;
+        text-align: center;
+    }
+    .our-features h1{
+        font-size: 52px;
+        padding: 30px 0 50px;
+    }
+    .our-features .features-cards-1, .our-features .features-cards-2{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+    }
+    .our-features .features-cards-1 .features-card{
+        width: 50%;
+        display: flex;
+        height: px;
+    }
+    .our-features .features-cards-2 .features-card{
+        width: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .our-features .features-cards-1 .features-card img, .our-features .features-cards-2 .features-card img{
+        width: 50%;
+        height: 300px;
+        padding: 0;
+    }
+    .our-features .features-cards-1 .features-card div, .our-features .features-cards-2 .features-card div{
+        width: 50%;
+        height: 300px;
+        padding: 20px;
+        background-color: var(--bg-color-teal);
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .our-features .features-cards-1 .features-card div h2, .our-features .features-cards-2 .features-card div h2{
+        font-size: 44px;
+        font-weight: 500;
+    }
+    .our-features .features-cards-1 .features-card div p, .our-features .features-cards-2 .features-card div p{
+        padding: 16px 0;
+    }
+    .our-features .features-cards-1 .features-card div .btn-teal, .our-features .features-cards-2 .features-card div .btn-teal{
+        padding: 10px;
     }
 }
