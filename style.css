@@ -23,7 +23,7 @@
     display: inline-block;
     background-color: var(--color-teal);
     color: white;
-    padding: 16px;
+    padding: 20px;
     border: 1px solid var(--color-teal);
 }
 .btn-teal:hover{
@@ -33,7 +33,7 @@
 
 /* common style */
 h1{
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 500;
 }
 p{
@@ -65,6 +65,9 @@ p{
     background-color: var(--bg-color-teal);
     padding: 20px 24px 400px;
 }
+.hero .hero-text h1{
+    font-size: 44px;
+}
 .hero .hero-text p{
     padding: 20px 0px;
 }
@@ -75,7 +78,7 @@ p{
     width: 100%;
     padding: 30px 24px;
     position: absolute;
-    top: 400px;
+    top: 300px;
     z-index: 10;
 
 }
@@ -188,7 +191,54 @@ p{
 .special-cards .special-card p{
     font-size: 14px;
 }
+
+.our-benefits, .our-stars{
+    padding: 120px 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.our-benefits .our-benefit-img, .our-stars .our-star-img{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    position: relative;
+    padding: 0 20px;
+}
+.our-benefits .our-benefit-img img, .our-stars .our-star-img img{
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}
+.our-benefits .our-benefit-text h1, .our-stars .our-star-text > h1{
+    padding: 30px 0 40px;
+}
+.our-benefits .our-benefit-text .speciality{
+    text-align: start;
+}
+.our-benefits .our-benefit-text .speciality p i{
+    color: var(--color-teal);
+    padding: 10px 30px 10px 20px;
+}
+.our-stars .our-star-text .our-star-stat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our-stars .our-star-text .our-star-stat h1{
+    padding: 10px 0;
+    color: var(--color-teal);
+}
+.our-stars .our-star-text .btn-teal{
+    margin: 20px 0;
+    width: 100%;
+}
 @media screen and (min-width: 768px){
+    h1{
+        font-size: 48px;
+    }
     .navbar{
         padding: 30px 80px;
     }
@@ -226,6 +276,9 @@ p{
         text-align: center;
         background-color: var(--bg-color-teal);
         padding: 20px 60px 800px;
+    }
+    .hero .hero-text > h1{
+        font-size: 56px;
     }
     .hero .hero-text p{
         padding: 20px 0px;
@@ -352,10 +405,58 @@ p{
     .special-cards .special-card p{
         font-size: 14px;
     }
+    .our-benefits, .our-stars{
+    padding: 120px 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+    .our-benefits .our-benefit-img, .our-stars .our-star-img{
+        width: 100%;
+        height: auto;
+        background-color: red;
+        position: relative;
+        padding: 0 60px;
+    }
+    .our-benefits .our-benefit-img img, .our-stars .our-star-img img{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        z-index: 1;
+    }
+    .our-benefits .our-benefit-text h1, .our-stars .our-star-text > h1{
+        padding: 30px 0 40px;
+    }
+    .our-benefits .our-benefit-text .speciality{
+        text-align: start;
+    }
+    .our-benefits .our-benefit-text .speciality p i{
+        color: var(--color-teal);
+        padding: 10px 30px 10px 20px;
+    }
+    .our-stars .our-star-text .our-star-stat{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .our-stars .our-star-text .our-star-stat h1{
+        padding: 10px 0;
+        color: var(--color-teal);
+    }
+    .our-stars .our-star-text .btn-teal{
+        margin: 30px 0;
+        width: 100%;
+    }
 }
 
 
 @media screen and (min-width: 1024px) {
+    h1{
+        font-size: 52px;
+        font-weight: 600;
+    }
     .navbar{
         padding: 50px 132px;
     }
@@ -523,5 +624,70 @@ p{
     }
     .special-cards .special-card p{
         font-size: 14px;
+    }
+    .our-benefits{
+    padding: 160px 132px 40px;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    }
+    .our-benefits .our-benefit-img, .our-stars .our-star-img{
+        width: 50%;
+        height: auto;
+        background-color: red;
+        position: relative;
+        padding: 0 60px;
+    }
+    .our-benefits .our-benefit-img img, .our-stars .our-star-img img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        padding-bottom: 60px;
+        z-index: 1;
+    }
+    .our-benefits .our-benefit-text, .our-stars .our-star-text{
+        width: 50%;
+    }
+    .our-benefits .our-benefit-text h1, .our-stars .our-star-text > h1{
+        padding: 30px 0 40px;
+    }
+    .our-benefits .our-benefit-text .speciality{
+        text-align: start;
+    }
+    .our-benefits .our-benefit-text .speciality p i{
+        color: var(--color-teal);
+        padding: 10px 30px 10px 20px;
+    }
+
+    .our-stars{
+    padding: 160px 132px 40px;
+    text-align: start;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+    }
+    .our-stars .our-star-text .our-star-stat{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    .our-stars .our-star-text .our-star-stat div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-stars .our-star-text .our-star-stat h1{
+        padding: 10px 0;
+        color: var(--color-teal);
+    }
+    .our-stars .our-star-text .btn-teal{
+        margin: 30px 0;
+        width: 40%;
     }
 }
