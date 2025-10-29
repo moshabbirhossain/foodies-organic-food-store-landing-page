@@ -78,12 +78,13 @@ p{
     width: 100%;
     padding: 30px 24px;
     position: absolute;
-    top: 300px;
+    top: 400px;
     z-index: 10;
 
 }
 .hero .hero-img{
     position: relative;
+    text-align: center;
 }
 .hero .hero-img > img{
     width: 100%;
@@ -102,8 +103,10 @@ p{
     width: 70%;
     border: 1px solid gray;
     border-radius: 40px;
-    padding: 18px 16px 18px 16px;
+    padding: 18px 0px 18px;
     background-color: var(--bg-color-white);
+    font-size: 16px;
+    font-weight: 400;
     font-weight: 500;
 }
 .hero .hero-img .div-2{
@@ -127,7 +130,8 @@ p{
     background-color: var(--bg-color-white);
 }
 .hero .hero-img .div-2 .div-2-content p{
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
 }
 .hero .hero-img .div-3{
     position: absolute;
@@ -218,9 +222,12 @@ p{
 .our-benefits .our-benefit-text .speciality{
     text-align: start;
 }
+.our-benefits .our-benefit-text .speciality p{
+    font-size: 20px;
+}
 .our-benefits .our-benefit-text .speciality p i{
     color: var(--color-teal);
-    padding: 10px 30px 10px 20px;
+    padding: 10px 30px 10px 10px;
 }
 .our-stars .our-star-text .our-star-stat{
     display: flex;
@@ -258,6 +265,109 @@ p{
 }
 .our-features .features-cards-1 .features-card div p, .our-features .features-cards-2 .features-card div p{
     padding: 16px 0;
+}
+
+.our-product{
+    padding: 20px 30px;
+    text-align: center;
+}
+.our-product h1{
+    padding: 30px 0 40px;
+}
+.our-product .our-product-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.our-product .our-product-cards .our-product-card{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 30px;
+    background-color: var(--bg-color-teal);
+}
+.our-product .our-product-cards .our-product-card:hover{
+    border: 2px solid var(--color-teal);
+}
+.our-product .our-product-cards .our-product-card-img figcaption{
+    color: var(--color-teal);
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text h3{
+    font-size: 24px;
+    padding: 14px 0;
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 20px;
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text div del,p{
+    font-size: 24px;
+    font-weight: 500;
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text div del{
+    color: gray;
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text div p{
+    color: var(--color-teal);
+}
+.our-product .our-product-cards .our-product-card .our-product-card-text .btn-teal{
+    width: 60%;
+    padding: 14px;
+}
+.ingredients{
+    margin: 30px 0;
+    background-image: url(/assets/Ingredients.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.ingredients h1{
+    padding-bottom: 20px;
+}
+.ingredients .btn-teal{
+    width: 60%;
+    padding: 16px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.footer .footer-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.footer > div p{
+    padding: 6px 0px;
+}
+.footer .footer-lists .footer-list h2{
+    font-size: 28px;
+}
+.footer .footer-lists .footer-list .input-field input{
+    border: 1px solid;
+    margin: 20px 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    outline: none;
+}
+.footer .footer-lists .footer-list .input-field input:hover{
+    color: var(--color-teal);
+}
+.footer .footer-lists .footer-list .input-field .btn-teal{
+    width: 100%;
 }
 @media screen and (min-width: 768px){
     h1{
@@ -299,7 +409,7 @@ p{
     .hero .hero-text{
         text-align: center;
         background-color: var(--bg-color-teal);
-        padding: 20px 60px 800px;
+        padding: 20px 60px 820px;
     }
     .hero .hero-text > h1{
         font-size: 56px;
@@ -314,7 +424,7 @@ p{
         width: 100%;
         padding: 30px 60px;
         position: absolute;
-        top: 220px;
+        top: 320px;
         z-index: 10;
     }
     .hero .hero-img{
@@ -396,10 +506,10 @@ p{
         width: 240px;
     }
     .special-cards{
-    padding: 30px 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
+        padding: 30px 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
     }
     .special-cards .special-card{
         text-align: center;
@@ -430,11 +540,11 @@ p{
         font-size: 14px;
     }
     .our-benefits, .our-stars{
-    padding: 120px 80px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+        padding: 120px 80px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
     .our-benefits .our-benefit-img, .our-stars .our-star-img{
         width: 100%;
@@ -455,6 +565,9 @@ p{
     .our-benefits .our-benefit-text .speciality{
         text-align: start;
     }
+    .our-benefits .our-benefit-text .speciality p{
+        font-size: 20px;
+    }
     .our-benefits .our-benefit-text .speciality p i{
         color: var(--color-teal);
         padding: 10px 30px 10px 20px;
@@ -473,9 +586,9 @@ p{
         margin: 30px 0;
         width: 100%;
     }
-    .our-features{
-    padding: 40px 80px;
-    text-align: center;
+        .our-features{
+        padding: 40px 80px;
+        text-align: center;
     }
     .our-features h1{
         font-size: 48px;
@@ -496,6 +609,67 @@ p{
     }
     .our-features .features-cards-1 .features-card div p, .our-features .features-cards-2 .features-card div p{
         padding: 16px 0;
+    }
+    .our-product{
+        padding: 60px 80px;
+        text-align: center;
+    }
+    .our-product h1{
+        font-size: 48px;
+        padding: 30px 0 40px;
+    }
+    .our-product .our-product-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .ingredients .btn-teal{
+        width: 40%;
+        padding: 16px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 80px;
+    }
+    .footer .footer-lists{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+    .footer .footer-lists .footer-list:nth-of-type(3){
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer > div p{
+        padding: 6px 0px;
+    }
+    .footer .footer-lists .footer-list h2{
+        font-size: 28px;
+    }
+    .footer .footer-lists .footer-list .input-field{
+        width: 100%;
+    }
+    .footer .footer-lists .footer-list .input-field input{
+        border: 1px solid;
+        margin: 20px 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        outline: none;
+    }
+    .footer .footer-lists .footer-list .input-field input:hover{
+        color: var(--color-teal);
+    }
+    .footer .footer-lists .footer-list .input-field .btn-teal{
+        width: 100%;
     }
 }
 
@@ -542,7 +716,7 @@ p{
     .hero .hero-text{
         width: 50%;
         text-align: start;
-        padding: 60px 132px 100px;
+        padding: 60px 132px 60px;
     }
     .hero .hero-text p{
         padding: 20px 0px;
@@ -622,7 +796,7 @@ p{
     .hero .hero-group-img{
         width: 50%;
         position: absolute;
-        bottom: -120px;
+        bottom: -100px;
         left: 70px;
         display: flex;
         align-items: center;
@@ -786,6 +960,82 @@ p{
         padding: 16px 0;
     }
     .our-features .features-cards-1 .features-card div .btn-teal, .our-features .features-cards-2 .features-card div .btn-teal{
+        padding: 10px;
+    }
+    .our-product{
+        padding: 140px 132px 40px;
+        text-align: start;
+    }
+    .our-product h1{
+        padding: 30px 0 50px;
+    }
+    .our-product .our-product-cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        
+        text-align: center;
+    }
+    .ingredients h1{
+        padding: 40px;
+        font-size: 52px;
+    }
+    .ingredients .btn-teal{
+        width: 30%;
+        padding: 20px;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: start;
+        justify-content: center;
+        text-align: start;
+        padding: 60px 132px;
+    }
+    .footer > div{
+        width: 30%;
+    }
+    .footer > div p{
+        padding: 6px 0px;
+    }
+    .footer .footer-lists{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+    }
+    .footer .footer-lists .footer-list{
+        width: 33%;
+    }
+    .footer .footer-lists .footer-list:nth-of-type(3){
+        display: block;
+        text-align: start;
+    }
+    .footer .footer-lists .footer-list h2{
+        font-size: 28px;
+    }
+    .footer .footer-lists .footer-list .input-field{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer .footer-lists .footer-list .input-field input{
+        border: 1px solid;
+        margin: 20px 0;
+        width: 50%;
+        padding: 10px;
+        text-align: start;
+        outline: none;
+    }
+    .footer .footer-lists .footer-list .input-field input:hover{
+        color: var(--color-teal);
+    }
+    .footer .footer-lists .footer-list .input-field .btn-teal{
+        width: 50%;
         padding: 10px;
     }
 }
