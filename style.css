@@ -206,7 +206,7 @@ p{
 .our-benefits .our-benefit-img, .our-stars .our-star-img{
     width: 100%;
     height: auto;
-    background-color: red;
+    background-color: var(--bg-color-teal);
     position: relative;
     padding: 0 20px;
 }
@@ -549,7 +549,7 @@ p{
     .our-benefits .our-benefit-img, .our-stars .our-star-img{
         width: 100%;
         height: auto;
-        background-color: red;
+        background-color: var(--bg-color-teal);
         position: relative;
         padding: 0 60px;
     }
@@ -858,7 +858,7 @@ p{
     .our-benefits .our-benefit-img, .our-stars .our-star-img{
         width: 50%;
         height: auto;
-        background-color: red;
+        background-color: var(--bg-color-teal);
         position: relative;
         padding: 0 60px;
     }
